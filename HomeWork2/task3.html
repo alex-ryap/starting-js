@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #3</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      function getIntRandom() {
+        return Math.floor(Math.random() * (50 + 50) - 50);
+      }
+
+      let a = getIntRandom();
+      let b = getIntRandom();
+
+      // 1. Если a и b положительные, вывести их разность
+      if (a >= 0 && b >= 0) {
+        console.log(a - b);
+      }
+
+      // 2. Если а и b отрицательные, вывести их произведение
+      if (a < 0 && b < 0) {
+        console.log(a * b);
+      }
+
+      // 3. Если а и b разных знаков, вывести их сумму
+      if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+        console.log(a + b);
+      }
+    </script>
+  </body>
+</html>
