@@ -17,4 +17,9 @@ let renderer = {
     }
     console.log(this.map);
   },
+
+  clear() {
+    console.clear();
+    this.map = '';
+  },
 };

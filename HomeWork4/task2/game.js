@@ -11,6 +11,9 @@ let game = {
       }
 
       const nextPoint = mover.getNextPosition(direction);
+      renderer.clear();
+      player.move(nextPoint);
+      renderer.render();
     }
   },
 
