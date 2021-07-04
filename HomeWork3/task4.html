@@ -36,6 +36,8 @@
       let productsWithPhoto = products.filter((product) => {
         if (product.photos) {
           return product.photos.length; // вернет True только тогда, когда массив photos не пустой
+        } else {
+          return false;
         }
       });
 

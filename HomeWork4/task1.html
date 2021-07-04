@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #1</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      function numToObj(number) {
+        if (isNaN(+number)) {
+          throw new Error('Not a number!');
+        }
+
+        if (!Number.isInteger(number)) {
+          throw new Error('Number must be integer!');
+        }
+
+        if (number < 0 && number > 999) {
+          throw new Error('Number must be in range from 0 to 999!');
+        }
+
+        let units = number % 10;
+        let tens = Math.floor((number / 10) % 10);
+        let hundreds = Math.floor((number / 100) % 10);
+
+        return {
+          units,
+          tens,
+          hundreds,
+        };
+      }
+
+      let number = '45';
+      let obj = numToObj(number);
+
+      console.log(number);
+      console.log(obj);
+    </script>
+  </body>
+</html>
