@@ -42,11 +42,9 @@ const renderProduct = (product) => {
 //Добавить в выводе изображение
 
 const renderPage = (list) => {
-  const container = document.querySelector('.products__list');
-  const productsList = list.map((item) => renderProduct(item));
-  productsList.forEach((productMarkup) => {
-    container.insertAdjacentHTML('beforeend', productMarkup);
-  });
+  document.querySelector('.products__list').innerHTML = list
+    .map((item) => renderProduct(item))
+    .join('');
 };
 
 renderPage(products);
