@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="components">
+        <div class="container components__wrap">
+          <div class="content">
+            <form class="components__form" action="#">
+              <h2 class="title">Размер:</h2>
+              <label for="small">
+                <input class="size" type="radio" name="size" id="small" />
+                Маленький <span class="price">+50RUB</span> (20ккал)
+              </label>
+              <label for="big">
+                <input class="size" type="radio" name="size" id="big" checked />
+                Большой <span class="price">+100RUB</span> (40ккал)
+              </label>
+
+              <h2 class="title">Начинка:</h2>
+              <label for="cheese">
+                <input
+                  class="stuffing"
+                  type="checkbox"
+                  name="cheese"
+                  id="cheese"
+                  checked
+                />
+                С сыром <span class="price">+10RUB</span> (20ккал)
+              </label>
+              <label for="salad">
+                <input
+                  class="stuffing"
+                  type="checkbox"
+                  name="salad"
+                  id="salad"
+                />
+                С салатом <span class="price">+20RUB</span> (5ккал)
+              </label>
+              <label for="potato">
+                <input
+                  class="stuffing"
+                  type="checkbox"
+                  name="potato"
+                  id="potato"
+                />
+                С картофелем <span class="price">+15RUB</span> (10ккал)
+              </label>
+              <h2 class="title">Дополнительно:</h2>
+              <label for="condiment">
+                <input
+                  class="topping"
+                  type="checkbox"
+                  name="condiment"
+                  id="condiment"
+                />
+                С приправой <span class="price">+15RUB</span> (0ккал)
+              </label>
+              <label for="mayonnaise">
+                <input
+                  class="topping"
+                  type="checkbox"
+                  name="mayonnaise"
+                  id="mayonnaise"
+                />
+                С майонезом <span class="price">+20RUB</span> (5ккал)
+              </label>
+
+              <div class="total">
+                <h2>Цена: <span class="total__price"></span></h2>
+                <h2>Калории: <span class="total__calories"></span></h2>
+              </div>
+            </form>
+            <img class="burger" src="img/burger.png" alt="" />
+          </div>
+          <div class="error">
+            <div class="error__top">
+              <h4 class="error__title">Извините</h4>
+            </div>
+            <div class="error__body">
+              <p class="error__text">
+                Невозможно заказать бургер без начинки. Необходимо выбрать хотя
+                бы одну из предложенных начинок
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
