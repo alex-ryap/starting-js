@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.components__wrap {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color: #cb2d3e;
+  position: relative;
+}
+
+.components__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 18px;
+}
+
+.title {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.title:not(:first-child) {
+  margin-top: 20px;
+}
+
+.total {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.total__price,
+.total__calories {
+  color: lightgreen;
+}
+
+.burger {
+  margin-left: 150px;
+  height: 85%;
+}
+
+.error {
+  width: 500px;
+  position: absolute;
+  padding: 20px;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.error.show {
+  opacity: 1;
+}
+
+.error__top {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.error__text {
+  margin-top: 20px;
+}
