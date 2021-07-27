@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 15px;
+  background: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #ccc;
+}
+
+.header__wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn-cart {
+  background: tomato;
+}
+
+.cart {
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  display: none;
+  padding: 20px;
+  width: 500px;
+  border: 1px solid steelblue;
+  background: white;
+  z-index: 2;
+}
+
+.cart__products {
+  border-bottom: 1px solid gray;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.cart__product {
+  display: flex;
+  min-height: 112px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.cart__product-image {
+  width: 100px;
+}
+
+.cart__btn-remove {
+  padding: 5px;
+  color: white;
+  border: 2px solid transparent;
+  background: crimson;
+  transition: all 0.4s ease-in-out;
+}
+
+.cart__btn-remove:hover {
+  color: crimson;
+  border-color: crimson;
+  background: transparent;
+}
+
+.cart__info {
+  padding-top: 20px;
+  text-align: end;
+}
+
+.cart__total-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart.open {
+  display: block;
+}
+
+.products__wrap {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  box-shadow: 0 0 20px -10px #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.product-card:hover {
+  border-color: steelblue;
+}
+
+.product-card__img {
+  object-fit: contain;
+  width: 200px;
+  height: 300px;
+}
+
+.product-card__title {
+  margin: 15px 0;
+}
+
+.product-card__price {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product-card__price::before {
+  content: 'RUB ';
+}
+
+.btn-buy {
+  width: 200px;
+  margin-bottom: 20px;
+  color: steelblue;
+  border: 1px solid steelblue;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-buy:hover {
+  background: steelblue;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #666;
+}
+
+.footer__wrap {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
