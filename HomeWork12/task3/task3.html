@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Validate Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="#">
+        <h2>Form validation</h2>
+        <div class="form__block">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="James Smith" />
+          <p class="error-text"></p>
+        </div>
+        <div class="form__block">
+          <label for="phone">Phone number:</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="+7-900-000-00-00"
+          />
+          <p class="error-text"></p>
+        </div>
+        <div class="form__block">
+          <label for="email">E-mail:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="james-smith@gmail.com"
+          />
+          <p class="error-text"></p>
+        </div>
+        <div class="form__block">
+          <label for="about">About me:</label>
+          <textarea
+            type="text"
+            name="about"
+            id="about"
+            placeholder="My hobbi is ..."
+          ></textarea>
+          <p class="error-text"></p>
+        </div>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
