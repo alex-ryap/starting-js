@@ -92,6 +92,7 @@ class Cart {
     }
 
     if (!isExist) {
+      product.quantity = 1;
       this.items.push(product);
     }
 
